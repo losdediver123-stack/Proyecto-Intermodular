@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Iniciar Sesión | DiverJet</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD,opsz@400,0,0,24" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- MENÚ SUPERIOR -->
+    <div class="cima">
+        <h2>DiverJet</h2>
+        <div class="enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="consejos.html">Consejos</a>
+        </div>
+        <a href="login.html" class="boton-azul" style="display: flex; align-items: center; gap: 5px; text-decoration: none; width: fit-content;"><span class="material-symbols-outlined" style="font-size: 18px;">person</span> Mi Cuenta</a>
+    </div>
+
+    <!-- CONTENIDO CENTRAL -->
+    <div class="principal" style="max-width: 500px; margin: 80px auto;">
+        <div class="reserva-form">
+            <h2 style="text-align: center; margin-bottom: 30px; font-size: 28px; color: #00296d;">Iniciar Sesión</h2>
+            <form action="perfil.html">
+                <div class="formulario-grupo">
+                    <label>Tu Correo Electrónico</label>
+                    <input type="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="formulario-grupo">
+                    <label>Tu Contraseña</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                
+                <p style="text-align: right; margin-top: -10px; margin-bottom: 20px;">
+                    <a href="#" style="color: #003d9b; font-size: 12px; font-weight: 700; text-decoration: none;">¿Olvidaste la contraseña?</a>
+                </p>
+
+                <button type="submit" class="boton-azul" style="width: 100%; padding: 16px; font-size: 16px;">Entrar a mi cuenta</button>
+                
+                <p style="text-align: center; margin-top: 25px; font-size: 14px; color: #434652;">
+                    ¿No tienes cuenta en DiverJet? <a href="registro.html" style="color: #003d9b; font-weight: bold; text-decoration: underline;">Regístrate gratis</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+            <!-- PIE DE PÁGINA -->
+    <div class="pie-nuevo">
+        <div class="pie-nuevo-contenedor">
+            <div class="pie-nuevo-marca">
+                <span class="pie-nuevo-logo">DiverJet</span>
+                <p>© 2024 DiverJet. Mobility for the Next Generation.</p>
+            </div>
+            <div class="pie-nuevo-info">
+                <h3>Contacto</h3>
+                <p>Email: hola@diverjet.com</p>
+                <p>Soporte: ayuda@diverjet.com</p>
+                <p>Tel: +34 900 123 456</p>
+            </div>
+            <div class="pie-nuevo-enlaces">
+                <a href="#">Contacto</a>
+                <a href="#">Aviso Legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,739 @@
+/* FUENTES Y RESET */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;900&family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fb;
+  color: #191c1e;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* MENÚ SUPERIOR (CIMA) */
+.cima {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.cima h2 {
+  color: #003d9b;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.enlaces a {
+  text-decoration: none;
+  color: #434654;
+  font-weight: 600;
+  margin-right: 25px;
+  transition: color 0.2s;
+}
+
+.enlaces a:hover {
+  color: #003d9b;
+}
+
+/* BOTONES */
+.boton-azul {
+  background-color: #003d9b;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 61, 155, 0.2);
+}
+
+.boton-azul:hover {
+  background-color: #0052cc;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 61, 155, 0.3);
+}
+
+.boton-secundario {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #f3f4f6;
+  color: #003d9b;
+  border-radius: 8px;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.2s;
+}
+
+.boton-secundario:hover {
+  background-color: #e5e7eb;
+}
+
+/* PORTADA */
+.portada {
+  position: relative;
+  padding: 120px 20px;
+  text-align: center;
+  background-color: #001848;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWYy3lR--Fzjz6SRkZvFJphOhScOogcNnaZ1uZasaPQTuCV4zv5NK9D3iIxIaXz0FxNgdCDadJtn1GS_UsYXk1c1k0YrsZLuFwb3fAOZN10p4yj1CTimaiUBNerMJyOodZVhVjxtHQgyIoRt8ok-ZtgrfL_8YqH-xMfMlaTnS_u1cMufMnGeCuDRr6I4uQcI_812HBHLNfP7EYkbQ1Zv7uMYYynJ57l9T2CeBrDdHRSAbcawyg-Pmz2mq52D1U1B9bGSwzoUtZYesp');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.portada h1 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.subtitulo {
+  font-size: 22px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* BUSCADOR */
+.buscador {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 12px;
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.buscador input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 220px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* PRINCIPAL (CONTENIDO) */
+.principal {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.titulo-seccion {
+  font-size: 36px;
+  color: #191c1e;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.subtitulo-seccion {
+  color: #737685;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+/* CONTENEDOR DE CAJAS (GRID) */
+.contenedor-cajas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+/* CAJA DE OFERTA */
+.caja {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.caja:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.caja-destacada {
+  border: 2px solid #dae2ff;
+  box-shadow: 0 10px 25px rgba(0, 61, 155, 0.1);
+}
+
+.etiqueta {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #003d9b;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.etiqueta-alerta {
+  background-color: #f59e0b;
+}
+
+.caja img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.precio-tag {
+  position: absolute;
+  top: 170px;
+  right: 15px;
+  background-color: #003d9b;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.caja-cuerpo {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.caja-cuerpo h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #191c1e;
+}
+
+.caja-cuerpo p {
+  color: #434654;
+  margin-bottom: 20px;
+  font-size: 15px;
+  flex-grow: 1;
+}
+
+/* CAJA PEQUEÑA (CONSEJOS) */
+.caja-pequena {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.2s;
+}
+
+.caja-pequena:hover {
+  transform: translateY(-5px);
+}
+
+.caja-pequena h3 {
+  color: #003d9b;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.caja-pequena p {
+  color: #737685;
+  font-size: 15px;
+}
+
+/* NUEVO PIE DE PÁGINA (MODERNO) */
+.pie-nuevo {
+    width: 100%;
+    padding: 60px 30px;
+    border-top: 1px solid #e1e2e4;
+    background-color: #f2f4f6;
+    margin-top: auto;
+}
+
+.pie-nuevo-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .pie-nuevo-contenedor {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.pie-nuevo-marca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .pie-nuevo-marca {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+.pie-nuevo-logo {
+    font-size: 20px;
+    font-weight: 800;
+    color: #00296d;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.pie-nuevo-marca p {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #64748b;
+    margin: 0;
+}
+
+.pie-nuevo-enlaces {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.pie-nuevo-enlaces a {
+    color: #64748b;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.pie-nuevo-enlaces a:hover {
+    color: #00296d;
+}
+
+.pie-nuevo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .pie-nuevo-info {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+.pie-nuevo-info h3 {
+    font-size: 11px;
+    font-weight: 800;
+    color: #00296d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.pie-nuevo-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+/* ================= NUEVOS ESTILOS PARA PAGINA OFERTAS ================= */
+
+/* LINK ACTIVO EN NAV */
+.enlaces a.activo {
+    color: #003d9b;
+    border-bottom: 2px solid #003d9b;
+    padding-bottom: 4px;
+}
+
+/* HERO OFERTAS */
+.hero-ofertas {
+    position: relative;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 41, 109, 0.8), rgba(0, 61, 155, 0.4)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-8EcBGDOD9KdI53xKDyg8uwvjflXyCwpM7rPl3Km7FfcaqNezrYDW0l9L8QtKb8tm8fJIZELRh8rdb67WEZPxWH2uNEoE1jbA2xB6oZqRAwwybQZLaHRUvTPQmgKB9eO6sGfCTYNcbIuubc13ahtqnVJTgU5GmD-FJGjDxhxvrmSqP-ogbovY81UULuMGJjjpUZ2xD74KuJ036DmaEpW9xAeghWLixjbV6PJD0Rl6fd1b2IeGrZKxzJe60cZCLoOF738Nu2r_eWY');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-ofertas-contenido {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.etiqueta-exclusiva {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-ofertas h1 {
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.hero-ofertas p {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* BARRA DE FILTROS */
+.barra-filtros-contenedor {
+    position: sticky;
+    top: 61px;
+    z-index: 90;
+    background-color: #f2f4f6;
+    border-bottom: 1px solid #e1e2e4;
+    padding: 24px 40px;
+}
+
+.barra-filtros {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input-grupo {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+}
+
+.input-grupo label {
+    position: absolute;
+    top: -8px;
+    left: 16px;
+    background-color: #f2f4f6;
+    padding: 0 4px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #00296d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.input-caja {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #ffffff;
+    border: 1px solid #c4c6d4;
+    border-radius: 12px;
+    padding: 12px 16px;
+    position: relative;
+}
+
+.input-caja .material-symbols-outlined {
+    color: #00296d;
+    font-size: 20px;
+}
+
+.input-caja select, .input-caja input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #191c1e;
+    width: 100%;
+}
+
+.texto-valor {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.boton-buscar {
+    background-color: #00296d;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 41, 109, 0.2);
+}
+
+.boton-buscar:hover {
+    background-color: #003d9b;
+    transform: translateY(-2px);
+}
+
+/* MODIFICADOR GRID (4 columnas) */
+.cuatro-columnas {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* ESTILO GLASS PARA TARJETAS */
+.glass-precio {
+    background: rgba(0, 61, 155, 0.9) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    padding: 8px 16px;
+    top: 155px !important;
+    bottom: auto !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.glass-precio span {
+    font-size: 11px;
+    font-weight: 700;
+    opacity: 0.9;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.z-10 { z-index: 10; }
+.relative { position: relative; }
+
+/* CAJA PIE (Details link) */
+.caja-pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.caja-pie span {
+    font-size: 10px;
+    font-weight: 700;
+    color: #747783;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.caja-pie a {
+    color: #00296d;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.caja-pie a:hover {
+    text-decoration: underline;
+}
+
+/* BOLETÍN / NEWSLETTER */
+.boletin {
+    background-color: #f2f4f6;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.boletin-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.boletin h2 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #191c1e;
+    margin-bottom: 16px;
+}
+
+.boletin p {
+    color: #434652;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.boletin-form {
+    display: flex;
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .boletin-form {
+        flex-direction: column;
+    }
+}
+
+.boletin-form input {
+    flex: 1;
+    padding: 16px 24px;
+    border: 1px solid #c4c6d4;
+    border-radius: 12px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.boletin-form input:focus {
+    border-color: #003d9b;
+    box-shadow: 0 0 0 2px rgba(0, 61, 155, 0.2);
+}
+
+.boletin-form button {
+    border-radius: 12px;
+    padding: 16px 32px;
+}
+
+/* ================= PAGINA DE RESERVA ================= */
+.contenedor-reserva {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.reserva-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.reserva-info img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.reserva-info h2 {
+    font-size: 32px;
+    color: #00296d;
+    margin-bottom: 10px;
+}
+
+.reserva-info p {
+    color: #434652;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.reserva-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #e1e2e4;
+}
+
+.formulario-grupo {
+    margin-bottom: 20px;
+}
+
+.formulario-grupo label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #434652;
+}
+
+.formulario-grupo input, .formulario-grupo select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #c4c6d4;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    font-size: 15px;
+}
+
+.formulario-grupo input:focus, .formulario-grupo select:focus {
+    border-color: #003d9b;
+    box-shadow: 0 0 0 2px rgba(0, 61, 155, 0.2);
+}
+
+.reserva-total {
+    font-size: 20px;
+    font-weight: 900;
+    color: #191c1e;
+    margin: 30px 0 20px;
+    border-top: 1px solid #e1e2e4;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.reserva-total span:last-child {
+    color: #00296d;
+    font-size: 28px;
+}

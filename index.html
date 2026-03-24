@@ -1,0 +1,187 @@
+﻿﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>DiverJet | Viajes Low Cost</title>
+    <!-- Vincula el nuevo estilo mejorado pero simple -->
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD,opsz@400,0,0,24" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- MENÚ SUPERIOR (Usando div en lugar de nav o header) -->
+    <div class="cima">
+        <h2>DiverJet</h2>
+        <div class="enlaces">
+            <a href="index.html" class="activo">Inicio</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="consejos.html">Consejos</a>
+        </div>
+        <a href="login.html" class="boton-azul" style="display: flex; align-items: center; gap: 5px; text-decoration: none; width: fit-content;"><span class="material-symbols-outlined" style="font-size: 18px;">person</span> Mi Cuenta</a>
+    </div>
+
+    <!-- PORTADA / HERO -->
+    <div class="portada">
+        <h1>Viaja barato por Europa</h1>
+        <p class="subtitulo">Ofertas reales de vuelos diarios para estudiantes.</p>
+
+        <div class="buscador">
+            <input type="text" placeholder="Origen (ej. Madrid)">
+            <input type="text" placeholder="Destino (ej. Londres)">
+            <input type="text" placeholder="Fecha deseada">
+            <button class="boton-azul">Buscar Vuelos</button>
+        </div>
+    </div>
+
+    <!-- CONTENIDO CENTRAL (Usando div en lugar de main o section) -->
+    <div class="principal">
+
+        <!-- SECCIÓN DE OFERTAS (6 TARJETAS) -->
+        <h2 class="titulo-seccion">Chollos del momento</h2>
+        <p class="subtitulo-seccion">Nuestra selección editorial con las mejores escapadas.</p>
+
+        <div class="contenedor-cajas">
+            <!-- Tarjeta 1 -->
+            <div class="caja">
+                <span class="etiqueta">Recomendado</span>
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxM3l8VejJHIQV5iY-_z1zQe2I-TrpzOCLz5lYAaorL5rPhR_yU30KSpo9j-UyZyJSDwgpborpm_wmOyeBmsDiTZy-VK72imBsUXK2_ju_6O4GiyHAAG5NnFDBGII0jb2wew8D2X3ibAjnHyhQ3j9qnZNcx6lOL6sGm_LAJTXibd4Ktrhw7GEKLbIkqn_2VjagyDhOja9ZaZpZsN4nEzt7qIsdsUXJArjAsc6KCqvmLi_fRh-h5NBv_i6T6sWExMr-NPuOzNJoVnWe"
+                    alt="Roma">
+                <div class="precio-tag">99€</div>
+                <div class="caja-cuerpo">
+                    <h3>Roma Imprescindible</h3>
+                    <p>Vuelo directo desde Madrid + 3 noches en hotel céntrico. Ideal para un viaje de fin de semana.
+                    </p>
+                    <a href="viajes/reserva-roma-imprescindible.html" class="boton-secundario">Ver detalles</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="caja caja-destacada">
+                <span class="etiqueta etiqueta-alerta">Top Ventas</span>
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyKdYGRE1J50x-tj0i7PnqRF9ab323eiU8VqJBvXo1VaZ9xdXW-B3Bwz0LK6v_VgKd_MLO9-pIdaNbEXXpjYL-dBSH3Aqal0QUDHEWNHBD16mKB_OsAeNiPNv-lxkWvgb_MzVRbuqKVlDp79oraEvuS85ssPwj9548b-eMuk47Qrg96rjmBGW8J9a8Gc7fhE6Ui1Q_2TbGWoV-MfakdvC_oE5b-NB6f03iZ1Q5D3roYeBZMII0L1y4veWzxtoI8vATARN1YD97ZDSr"
+                    alt="Lisboa">
+                <div class="precio-tag">75€</div>
+                <div class="caja-cuerpo">
+                    <h3>Escapada a Lisboa</h3>
+                    <p>Vuelo + Alojamiento cerca del Barrio Alto. Date prisa porque los vuelos están subiendo.</p>
+                    <a href="viajes/reserva-roma-imprescindible.html" class="boton-azul" style="display: block; width: 100%; text-align: center; text-decoration: none; box-sizing: border-box;">¡Reservar ya!</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="caja">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAJJ8e6XkcLP1JKMXR3r5AWb2AVuk_XBqgwWhm3HfrKOAnCuQlpX91XmFVTpJmlsDUlErafFGqcsKIuVqHKCk83MTAY1ehS4IXThuGIFQ8s4mkpanx4mihbWE-DV5X3hdaVEfEKxKNPjWmDpQ_mnN0xjPlCw1PwpHhWCYLxcGoUgtmp__uF-sCkVqy6xTPFp0tdL94uOOX-BjLHmKaOYH1S3yHMD6Xw3QwIH66psvdj6GhXhqjbSkwybRXXkZKyyGB4LyMOdlfQNcB"
+                    alt="París">
+                <div class="precio-tag">120€</div>
+                <div class="caja-cuerpo">
+                    <h3>París Low Cost</h3>
+                    <p>Vuelo ida y vuelta + 2 noches de hotel cerca de Montmartre. Oferta limitada para estudiantes.</p>
+                    <a href="viajes/reserva-par-s-low-cost.html" class="boton-secundario">Ver detalles</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="caja">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWsTFHVS3JO6espmMHDBtQgtx6DaxYrcYffpyryC2nwFunTNFmp__ajTu6-_gAxj_YcbdwdSPrvYczk1tibTpLtUul-W1F0n-RlipgZZOXoKVAnxefM7MCq474E6Vf8f13x-JeyUyMFmqUgb62pana1UcJBKYfj4rGXcBGTx9FSd2bSKNUy-l_dTQf6YLKmSfKJczEV-8Qm1rQiGbtc8IjDrEgJbFa4VAFv6FCjn2MUVJbQN8_aE6y1xLxM_LViwsC1XkNYpk98mKK"
+                    alt="Budapest">
+                <div class="precio-tag">89€</div>
+                <div class="caja-cuerpo">
+                    <h3>Budapest Mágico</h3>
+                    <p>Vuelos directos y 3 días de hotel cerca del centro. Conoce una de las ciudades más bonitas a bajo
+                        coste.</p>
+                    <a href="viajes/reserva-budapest-m-gico.html" class="boton-secundario">Ver detalles</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="caja">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC6q30-n7_9untDnZ5g5qZ4UUglGPBY1Ru4DkQ3F3e4b2phY1B9XBJlwHxumb-LzO0D95hdCwRYbm6VPkKaxlZNsmMbDHHBNZ315RdVUZ7ERgKcCtv22DtdMCP4FcqCNoVwpLsye_TCV6MzhPmohm6Bf5VwzqLRJjuFxN22NoExcAdT45vT9vophsx2g6O32-gsjf6P5z0eeH5A_hYVSNw6HBlLG5hwki3Pht18z24UMpTXLq2jeYifI8eskeAYc5h6d0pDJc54BZA"
+                    alt="Praga">
+                <div class="precio-tag">115€</div>
+                <div class="caja-cuerpo">
+                    <h3>Praga de Cuento</h3>
+                    <p>Viaje organizado con alojamiento privado cerca del reloj astronómico y seguro básico de viaje.
+                    </p>
+                    <a href="viajes/reserva-praga-de-cuento.html" class="boton-secundario">Ver detalles</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="caja">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlseT0DtiaTQ4eEuQvqhbPNXnHJ8z8Y59ZmHZhRC_H2R3HzyMK8yaqgue8GkSM3hpHQPqc1NStXt34w6p6CZpsDCweN2Q1__NiIoDWvsbPTStW3mrKjorzNyjK2_-i1L8QXGFptOK_PVhuWsgCyQyyiwVjCwplnicv4BTvdjn2E_6uo7F2leep8xXx90Qv1pzAgSG6uSyZpuHHFJyvnYFp4ZdFRCWxS168G9uSrFx1BNB4mrHp-03zj2o8o7va9dt-v44ogvppnnOV"
+                    alt="Berlín">
+                <div class="precio-tag">65€</div>
+                <div class="caja-cuerpo">
+                    <h3>Berlín Express</h3>
+                    <p>Vuelo ida y vuelta en promoción. Perfecto para una escapada rápida de 2 días a puro ambiente
+                        alemán.</p>
+                    <a href="viajes/reserva-berl-n-express.html" class="boton-secundario">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEGUNDA SECCIÓN: CONSEJOS -->
+        <h2 class="titulo-seccion">Consejos de Experto</h2>
+        <p class="subtitulo-seccion">Hackea tus viajes para que rinda tu presupuesto.</p>
+
+        <div class="contenedor-cajas">
+            <div class="caja-pequena">
+                <h3>Viajar entre semana</h3>
+                <p>Las tarifas aéreas de los martes y miércoles pueden llegar a ser hasta un 40% más baratas comparado
+                    con el fin de semana.</p>
+            </div>
+            <div class="caja-pequena">
+                <h3>Solo mochila</h3>
+                <p>Aprende a meter todo en una mochila escolar de dimensiones mínimas para esquivar el precio extra de
+                    facturación.</p>
+            </div>
+            <div class="caja-pequena">
+                <h3>Aeropuertos Secundarios</h3>
+                <p>Volar a aeropuertos alejados suele salir a mitad de precio, solo debes planear bien el transporte
+                    luego a la ciudad.</p>
+            </div>
+            <div class="caja-pequena">
+                <h3>Regla de los 3 meses</h3>
+                <p>Para destinos de alta demanda en Europa, el precio mínimo garantizado suele conseguirse con 90 días
+                    de antelación.</p>
+            </div>
+            <div class="caja-pequena">
+                <h3>Snacks de casa</h3>
+                <p>La comida en los aeropuertos tiene un sobrecoste enorme. Lleva tus propios snacks y pasa el control de seguridad con una botella vacía para rellenarla de agua gratis dentro.</p>
+            </div>
+            <div class="caja-pequena">
+                <h3>Tarjetas sin comisiones</h3>
+                <p>Utiliza tarjetas de bancos digitales o neobancos para obtener el mejor tipo de cambio evitando
+                    recargos ocultos.</p>
+            </div>
+        </div>
+
+    </div>
+
+            <!-- PIE DE PÁGINA -->
+    <div class="pie-nuevo">
+        <div class="pie-nuevo-contenedor">
+            <div class="pie-nuevo-marca">
+                <span class="pie-nuevo-logo">DiverJet</span>
+                <p>© 2024 DiverJet. Mobility for the Next Generation.</p>
+            </div>
+            <div class="pie-nuevo-info">
+                <h3>Contacto</h3>
+                <p>Email: hola@diverjet.com</p>
+                <p>Soporte: ayuda@diverjet.com</p>
+                <p>Tel: +34 900 123 456</p>
+            </div>
+            <div class="pie-nuevo-enlaces">
+                <a href="#">Contacto</a>
+                <a href="#">Aviso Legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
