@@ -12,15 +12,13 @@ Catálogo web de productos estático (sin base de datos) construido con **HTML +
 - Diseño responsive básico usando `grid`, `auto-fit` y media queries.
 - Navegación por anclas (`#inicio`, `#productos`, etc.).
 
-## Publicación en servidor local
-Desde la raíz del proyecto (`/workspace/Proyecto-Intermodular`), ejecuta:
+## Publicación en servidor local (sin Python)
+### Opción 1: VS Code + Live Server
+1. Instala la extensión **Live Server**.
+2. Abre la carpeta del proyecto en VS Code.
+3. Haz clic derecho en `index.html` y selecciona **Open with Live Server**.
 
-```bash
-python3 -m http.server 8000
-```
-
-Luego abre en tu navegador:
-
-- `http://localhost:8000`
-
-Para detener el servidor, usa `Ctrl + C`.
+### Opción 2: XAMPP (Apache)
+1. Copia la carpeta del proyecto dentro de `htdocs`.
+2. Inicia **Apache** desde el panel de XAMPP.
+3. Abre en el navegador: `http://localhost/Proyecto-Intermodular/`.
